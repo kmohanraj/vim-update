@@ -1,0 +1,41 @@
+1917  mkdir rails_tutorial
+ 1918  cd rails_tutorial/
+ 1919  ls
+ 1920  vi Dockerfile
+ 1921  vi Gemfile
+ 1922  touch Gemfile.lock
+ 1923  ls
+ 1924  vi source 'https://rubygems.org'
+ 1925  ls
+ 1926  ls -la
+ 1927  vi docker-compose.yml
+ 1928  docker-compose run web rails new . --force --database=postgresql
+ 1929  docker ls
+ 1930  docker images
+ 1931  sudo chown -R $USER:$USER
+ 1932  sudo chown -R $ITERON:$ITERON
+ 1933  sudo chown -R $ITERON:$ITERON .
+ 1934  docker-compose build
+ 1935  sudo systemctl enable docker
+ 1936  docker-compose build
+ 1937  systemctl status docker
+ 1938  docker-compose build
+ 1939  sudo docker-compose build
+ 1940  ls
+ 1941  cat docker-compose.yml 
+ 1942  docker-compose run web rails new . --force --database=postgresql
+ 1943  sudo docker-compose run web rails new . --force --database=postgresql
+ 1944  docker stop rails_tutorial_db_1
+ 1945  sudo docker stop rails_tutorial_db_1
+ 1946  sudo chown -R $USER:$USER .
+ 1947  docker-compose build
+ 1948  sudo docker-compose build
+ 1949  sudo docker-compose up
+ 1950  docker-compose run web rake db:create
+ 1951  sudo docker-compose run web rake db:create
+ 1952  sudo docker-compose up
+ 1953  sudo docker-compose up -d
+ 1954  ls
+ 1955  sudo docker-compose up
+ 1956  history 
+
