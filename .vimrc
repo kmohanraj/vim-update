@@ -97,6 +97,7 @@ Plug 'avdgaag/vim-phoenix', { 'for' : 'elixir' }
 Plug 'vim-ruby/vim-ruby'
 " Tab completions
 Plug 'ervandew/supertab'
+Plug 'ngmy/vim-rubocop'
 
 "Rails
 Plug 'tpope/vim-rails'
@@ -196,6 +197,10 @@ set noshowmode
 colorscheme badwolf
 set background=dark ts=4 sw=4 et
 
+" Rubocop - ruby 
+let g:vimrubocop_config = '/path/to/rubocop.yml'
+let g:vimrubocop_keymap = 0
+nmap <Leader>r :RuboCop<CR>
 " For CtrlP Settings"""""""""""""""""""""""""""""""""""""""""
 " Set no max file limit
 let g:ctrlp_max_files = 0
