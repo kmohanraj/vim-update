@@ -1,5 +1,7 @@
 set nocompatible               " be iMproved
 
+set encoding=utf-8
+
 " 1 tab to 2 space for ruby
 set tabstop=2
 set softtabstop=2
