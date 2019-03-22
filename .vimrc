@@ -197,15 +197,37 @@ set noshowmode
 colorscheme badwolf
 set background=dark ts=4 sw=4 et
 
+" 2019-22-03 changes"""""""""""""""""""""""""""""""""""""""
+
 " Rubocop - ruby 
 let g:vimrubocop_config = '/path/to/rubocop.yml'
 let g:vimrubocop_keymap = 0
+
+function! Rubocop()
+: let current = @%
+: exec "!rubocop -E -F ".current
+:endfunction
+
+
+function! RubocopAutocorrect()
+  execute "!rubocop -a " . bufname("%")
+  call SyntasticCheck()
+endfunction
+
+map <silent> <Leader>cop :call RubocopAutocorrect()<cr>
+let g:syntastic_ruby_checkers = ['rubocop', 'mri']
+
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 nmap <Leader>r :RuboCop<CR>
 " For CtrlP Settings"""""""""""""""""""""""""""""""""""""""""
 " Set no max file limit
 let g:ctrlp_max_files = 0
 " Search from current directory instead of project root
 let g:ctrlp_working_path_mode = 0
+
+let g:syntastic_ruby_checkers = 'rubocop'
+let g:syntastic_ruby_rubocop_exec = '/usr/local/bin/cookstyle'
 
 " Ignore these directories
 set wildignore+=*/_build/**
