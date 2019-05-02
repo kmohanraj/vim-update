@@ -27,9 +27,6 @@ autocmd FileType css,scss,slim,html,eruby,coffee,javascript setlocal iskeyword+=
 autocmd Filetype python setlocal tabstop=4 shiftwidth=4 softtabstop=4
 
 
-
-
-
 call plug#begin()
 
 
@@ -82,6 +79,8 @@ Plug 'tpope/vim-projectionist'
 Plug 'ekalinin/dockerfile.vim'
 " Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 " Plug 'Shougo/vimshell.vim'
+
+Plug 'jiangmiao/auto-pairs'
 
 "Need to install https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Mononoki/Regular/complete/mononoki-Regular%20Nerd%20Font%20Complete.ttf
 "For devicons to work properly
