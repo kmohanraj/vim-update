@@ -37,4 +37,8 @@ ln -s ~/Music/rails/myvim/.vimrc ~/.vimrc1
 ```diff
 + this text is highlighted in 
 - this text is highlighted in red
+
+*
+#
++
 ```
