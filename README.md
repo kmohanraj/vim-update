@@ -32,3 +32,9 @@ ln -s ~/Music/rails/myvim/.vimrc ~/.vimrc1
 
 ``` gf ``` will go to the file under the cursor
 ``` g] ``` and other commands will jump to a tag definition (a tag can be a function or variable name, or more).
+
+
+```diff
++ this text is highlighted in green
+- this text is highlighted in red
+```
