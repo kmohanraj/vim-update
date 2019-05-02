@@ -41,3 +41,9 @@ gf will go to the file under the cursor
 g] and other commands will jump to a tag definition (a tag can be a function or variable name, or more).
 
 ```
+
+
+```diff
++ this will be highlighted in green
+- this will be highlighted in red
+```
