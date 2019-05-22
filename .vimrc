@@ -77,6 +77,7 @@ Plug 'sjl/badwolf'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tpope/vim-projectionist'
 Plug 'ekalinin/dockerfile.vim'
+Plug 'matze/vim-move'
 " Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 " Plug 'Shougo/vimshell.vim'
 
@@ -135,6 +136,7 @@ Plug 'gregsexton/gitv'
 " endif
 " let g:deoplete#enable_at_startup = 1
 "==========================================================================
+let g:move_key_modifier = 'C'
 
 " Press <C-x> & <C-V> to download plugin-list from VimAwesome
 
