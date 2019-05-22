@@ -28,30 +28,31 @@ g# - same as g* but in backward direction.
 gg - goes to the first line in the buffer (or provide a count before the command for a specific line).
 
 G  - goes to the last line (or provide a count before the command for a specific line).
-
 ```
 ##### See also,
 
 ```
-
 gf - will go to the file under the cursor
 g] - and other commands will jump to a tag definition (a tag can be a function or variable name, or more).
-
 ```
 
 ### 2.Split the screen,
 
 ```
-
 Use :AS command to split the screen horizontally
 
 Use :AV command to split the screen vertical.
 
-					----
+					OR
 
+Use :vsp horizontally 
+Use :sp  vertical 
+```
+
+### 3.Switch between Opened file,
+```
 Use :A  command to switch between opened files.
 
 Use :AT separate tab within the same Vim window.
-
 ```
 
