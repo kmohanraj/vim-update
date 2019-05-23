@@ -56,3 +56,81 @@ Use :A  command to switch between opened files.
 Use :AT separate tab within the same Vim window.
 ```
 
+### 4. Automatically Indent your Code
+
+```
+gg=G
+
+
+ex,
+
+before:
+
+def test
+temp = test
+end
+
+after: 
+
+def test
+  temp = test
+end
+```
+
+### 5. Search and replace
+
+```
+
+/search_word
+
+```
+
+```
+:/%s/old/new/g 
+
+OR
+
+:%s/old/new/gc - replace all old with new throughout file with confirmations
+
+
+: Command mode
+
+% Means across all lines
+
+/old is regex to find
+
+/new/ is regex to replace 
+
+/g means global
+
+```
+
+### 6.Insert Mode - Inserting/Appending text
+
+```
+i - start insert mode at cursor
+
+I - insert at the beginning of the line
+
+a - append after the cursor
+
+A - append at the end of the line
+
+o - open (append) blank line below current line (no need to press return)
+
+O - open blank line above current line
+
+ea - append at end of word
+
+Esc - exit insert mode
+```
+
+### 7. Up and Down Single Line,
+
+
+```
+ddkP - up
+
+ddp - down
+```
+
